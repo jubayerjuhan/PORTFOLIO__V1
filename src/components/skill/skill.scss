@@ -1,0 +1,33 @@
+.skills__skill-container {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 30px;
+  margin: 1rem 0;
+}
+
+.skill-fill {
+  height: 20px;
+  background-color: var(--color-red);
+  transform: translateY(100%);
+  border-radius: 5px;
+}
+
+.skill-empty {
+  height: 20px;
+  width: 100%;
+  background: #343434;
+  border-radius: 5px;
+}
+
+.skill-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  svg {
+    color: var(--color-red);
+    margin-right: 1rem;
+
+    font-size: 2rem;
+  }
+}

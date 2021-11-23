@@ -1,0 +1,14 @@
+.achievements__heading_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.achievements__heading_title svg {
+  color: var(--color-red);
+  font-size: 5rem;
+}
+/*# sourceMappingURL=achievements.css.map */

@@ -1,0 +1,60 @@
+.achievement__container {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+}
+
+.achievement__container-Name {
+  margin-right: 1rem;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 44px;
+    padding-right: 2rem;
+  }
+  svg {
+    font-size: 10rem;
+    color: var(--color-red);
+  }
+}
+
+.achievement-content {
+  font-family: var(--font-family);
+  .achievement-content_info {
+    h1 {
+      margin: 1rem 0;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 44px;
+      color: var(--color-red);
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .achievement-content_image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .achievement__container {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement__container-Name {
+    margin: 2rem 0;
+    h1 {
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 44px;
+      padding-right: 0rem;
+    }
+  }
+}

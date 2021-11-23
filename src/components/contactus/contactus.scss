@@ -1,0 +1,45 @@
+.contactus__action__section {
+  margin: 5rem 0rem 2rem;
+}
+.contactus__action__section {
+  display: flex;
+}
+
+.contactus__action__section__form {
+  flex: 2;
+  .contactus__action__2x_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 4rem;
+  }
+  .contactus__action__section__form__input,
+  .contactus__action__section__form__input_last {
+    font-family: var(--font-family);
+    p {
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 1rem 10px;
+      border: none;
+      outline: none;
+      background-color: #343434;
+      color: #fff;
+
+      font-family: var(--font-family);
+    }
+  }
+
+  .contactus__action__section__form__input_last {
+    margin: 2rem 0;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 10rem;
+    }
+  }
+}

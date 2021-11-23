@@ -1,0 +1,12 @@
+.skills-detail__container {
+  margin: 4rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-detail__container {
+    grid-template-columns: 1fr;
+  }
+}

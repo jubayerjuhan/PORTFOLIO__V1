@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: unset;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark__bg {
+  background-color: var(--dark-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light__text {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gradient__bar {
+  height: 4px;
+  width: 100px;
+  background: var(--color-red);
+  margin: 1rem;
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.section__heading h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.section__heading p {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* padding and margin */
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.small__padding {
+  padding: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 700px) {
+  .section__margin {
+    margin: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__margin {
+    margin: 2rem;
+  }
+  .section__padding {
+    padding: 2rem;
+  }
+}
+
+/* animations */
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-bottom 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }

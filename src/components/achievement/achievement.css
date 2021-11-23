@@ -1,0 +1,69 @@
+.achievement__container {
+  margin: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr;
+      grid-template-columns: 3fr 3fr;
+}
+
+.achievement__container-Name {
+  margin-right: 1rem;
+  font-family: var(--font-family);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.achievement__container-Name h1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 44px;
+  padding-right: 2rem;
+}
+
+.achievement__container-Name svg {
+  font-size: 10rem;
+  color: var(--color-red);
+}
+
+.achievement-content {
+  font-family: var(--font-family);
+}
+
+.achievement-content .achievement-content_info h1 {
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 44px;
+  color: var(--color-red);
+}
+
+.achievement-content .achievement-content_info p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.achievement-content .achievement-content_image img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .achievement__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .achievement__container-Name {
+    margin: 2rem 0;
+  }
+  .achievement__container-Name h1 {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 44px;
+    padding-right: 0rem;
+  }
+}
+/*# sourceMappingURL=achievement.css.map */

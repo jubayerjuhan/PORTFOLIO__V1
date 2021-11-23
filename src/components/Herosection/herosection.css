@@ -1,0 +1,102 @@
+.utils img {
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.herosection__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.herosection__container__texts {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-right: 5rem;
+  z-index: 1;
+}
+
+.herosection__container__texts p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.herosection__container__texts p:first-child {
+  color: var(--color-red);
+}
+
+.herosection__container__texts h1 {
+  margin: 1rem 0;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.herosection__container__texts button {
+  padding: 15px 30px;
+  color: white;
+  background: var(--color-red);
+  border: none;
+  outline: none;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.herosection__container__images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.herosection__container__images img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 1050px) {
+  .herosection__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .herosection__container__texts {
+    padding-right: 0;
+    padding-bottom: 5rem;
+  }
+  .herosection__container__texts p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .herosection__container__texts h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .herosection__container__images {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .herosection__container__texts {
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+  .herosection__container__images {
+    padding-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=herosection.css.map */

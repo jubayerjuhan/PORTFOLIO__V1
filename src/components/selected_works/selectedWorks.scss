@@ -1,0 +1,15 @@
+.selected-works__container-content {
+  margin: 4rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem 4rem;
+}
+
+@media (max-width: 1050px) {
+  .selected-works__container-content {
+    display: block;
+  }
+  .project__container {
+    margin: 5rem 0;
+  }
+}

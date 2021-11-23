@@ -1,0 +1,18 @@
+.service__container-content {
+  margin: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .service__container-content {
+    display: block;
+  }
+  .service__container-content .services__service-container {
+    margin: 2rem 0;
+  }
+}
+/*# sourceMappingURL=services.css.map */
