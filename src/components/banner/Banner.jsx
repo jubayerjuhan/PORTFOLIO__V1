@@ -3,7 +3,10 @@ import "./banner.css";
 
 const Banner = () => {
   return (
-    <div className="banner dark__bg section__padding">
+    <div
+      className="banner dark__bg section__padding"
+      style={{ paddingTop: "0rem", paddingBottom: "0rem" }}
+    >
       <div className="banner__container">
         <h1 className="light__text">
           Discover How Design Can Help Your Business

@@ -25,6 +25,16 @@
   padding-right: 2rem;
 }
 
+.achievement__container-Name h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--color-red);
+}
+
+.achievement__container-Name h4 {
+  margin: 0.5rem 0;
+  color: var(--color-red);
+}
+
 .achievement__container-Name svg {
   font-size: 10rem;
   color: var(--color-red);

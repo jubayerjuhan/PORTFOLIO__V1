@@ -7,9 +7,9 @@ const Achievement = () => {
   return (
     <div className="achievement__container">
       <div className="achievement__container-Name">
-        <h1 className="light__text">
-          NASA SPACE APPS CHALLENGE 2021- Bangladesh (1st Runner's Up)
-        </h1>
+        <h1 className="light__text">NASA SPACE APPS CHALLENGE 2021</h1>
+        <h3 className="">Bangladesh</h3>
+        <p className="light__text">Regional Runner Up</p>
         <SiNasa />
         <div class="gradient__bar" style={{ margin: "2rem 0" }}></div>
       </div>
