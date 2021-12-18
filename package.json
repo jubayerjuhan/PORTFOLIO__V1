@@ -7,9 +7,12 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "hamburger-react": "^2.4.1",
+    "mapbox-gl": "^2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-map-gl": "^6.1.17",
+    "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },

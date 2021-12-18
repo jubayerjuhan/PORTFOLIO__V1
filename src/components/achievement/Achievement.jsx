@@ -15,15 +15,18 @@ const Achievement = () => {
       </div>
       <div className="achievement-content">
         <div className="achievement-content_image">
-          <img src="https://via.placeholder.com/1920x1080" alt="Achievement" />
+          <img
+            src="https://res.cloudinary.com/juhan-cloud/image/upload/v1638088228/Portfolio%20V1/image6.ef17f705_vqjgkj.png"
+            alt="Achievement"
+          />
         </div>
         <div className="achievement-content_info">
-          <h1>M.A.R.V.O. Planetry Lander Video Game</h1>
+          <h1>M.A.R.V.O. - Planetary Lander Simulation Game</h1>
           <p className="light__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            quo suscipit corporis dignissimos quaerat at necessitatibus
-            aspernatur est itaque corrupti? Vitae provident quis quia,
-            dignissimos odio temporibus ut amet dolores!
+            M.A.R.V.O is a simulation game that allows you to explore the MARS
+            by playing the game. In this game you will be able to land on the
+            surface of Mars with a real lunar module and explore the environment
+            with some pretty exciting MARS locations.
           </p>
           <div className="arrow__btn">
             <p className="light__text">Learn More</p>

@@ -7,6 +7,8 @@ import SelectedWorks from "./../../components/selected_works/SelectedWorks";
 import Achievements from "./../../components/achievements/Achievements";
 import Banner from "./../../components/banner/Banner";
 import Contactus from "./../../components/contactus/Contactus";
+import Map from "./../../components/map/Map";
+import Footer from "./../../components/footer/Footer";
 
 const Homepage = () => {
   return (
@@ -19,6 +21,8 @@ const Homepage = () => {
       <Achievements />
       <Banner />
       <Contactus />
+      <Map />
+      <Footer />
     </div>
   );
 };

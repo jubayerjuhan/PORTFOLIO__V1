@@ -21,7 +21,10 @@ const Herosection = () => {
           <button>Contact Me</button>
         </div>
         <div className="herosection__container__images">
-          <img src={profileImage} alt="profileImage" />
+          <img
+            src="https://res.cloudinary.com/juhan-cloud/image/upload/v1638114468/Portfolio%20V1/dp_omkgzg.png"
+            alt="profileImage"
+          />
         </div>
       </div>
     </>

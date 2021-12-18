@@ -7,6 +7,10 @@
   grid-gap: 1rem;
 }
 
+.service__container-content::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 1050px) {
   .service__container-content {
     display: block;

@@ -61,9 +61,11 @@
 }
 
 .herosection__container__images img {
-  height: 500px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 @media screen and (max-width: 1050px) {
