@@ -1,6 +1,5 @@
 import React from "react";
 import "./herosection.css";
-import profileImage from "../../assets/profileImage.svg";
 import wave from "../../assets/wave.svg";
 
 const Herosection = () => {

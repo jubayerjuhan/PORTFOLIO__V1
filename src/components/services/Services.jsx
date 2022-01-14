@@ -3,7 +3,6 @@ import "./services.css";
 import Service from "./../service/Service";
 import { BiSearch } from "react-icons/bi";
 import { AiOutlinePicture } from "react-icons/ai";
-import Fade from "react-reveal/Fade";
 
 const Services = () => {
   const myServices = [

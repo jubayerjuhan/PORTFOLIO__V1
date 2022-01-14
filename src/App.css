@@ -10,7 +10,8 @@ a {
 }
 
 .dark__bg {
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
+  background-color: #1a1a1a;
 }
 
 .light__text {

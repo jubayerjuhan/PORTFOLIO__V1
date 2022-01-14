@@ -1,9 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import Hamburger from "hamburger-react";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const [webNavClassName, setWebNavClassName] = useState("navbar__normal");
+
+  const mobileMenuClassName = open
+    ? "mobile__container-open"
+    : "mobile__container-close";
+
+  if (open) {
+    if (window.innerWidth > 1050) {
+      setOpen(false);
+    }
+    window.scrollTo(-100, -100);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        setWebNavClassName("navbar__container");
+      } else {
+        setWebNavClassName("navbar__normal");
+      }
+    });
+  }, []);
+
   const Menu = () => (
     <>
       <p className="light__text">
@@ -24,19 +47,15 @@ const Navbar = () => {
     </>
   );
 
-  const [open, setOpen] = useState(false);
-  console.log(open);
   return (
     <>
       <div className="navbar__links-mobile">
-        {open && (
-          <div className="navber__links-mobile__container  dark__bg slide-bottom">
-            <Menu />
-          </div>
-        )}
+        <div className={mobileMenuClassName}>
+          <Menu />
+        </div>
       </div>
 
-      <div className="navbar__container section__padding dark__bg">
+      <div className={`section__padding ${webNavClassName}`}>
         <div className="navbar__container-logo">
           <img src={logo} alt="" />
         </div>

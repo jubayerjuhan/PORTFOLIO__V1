@@ -1,10 +1,12 @@
 .utils {
+  position: relative;
   img {
     position: absolute;
     left: 0;
-    top: 10%;
+    top: 50px;
   }
 }
+
 .herosection__container {
   display: flex;
   align-items: center;
@@ -59,6 +61,9 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .utils {
+    display: none;
+  }
   .herosection__container {
     flex-direction: column;
   }
@@ -84,6 +89,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  .herosection__container {
+    padding-top: 100px;
+  }
   .herosection__container__texts {
     padding-right: 0;
     padding-bottom: 2rem;
