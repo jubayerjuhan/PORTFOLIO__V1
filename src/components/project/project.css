@@ -1,6 +1,10 @@
 .project__thumbnail {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .project__thumbnail img {
@@ -38,8 +42,17 @@
   cursor: pointer;
 }
 
+.arrow__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .arrow__btn p {
-  margin-right: 1rem;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -58,5 +71,11 @@
 .arrow__btn:hover svg {
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
+}
+
+@media screen and (max-width: 1050px) {
+  .project__thumbnail {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=project.css.map */

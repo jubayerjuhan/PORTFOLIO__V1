@@ -1,26 +1,28 @@
 import React from "react";
-import "./project.css";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
-const Project = () => {
+import "./project.css";
+
+const Project = ({
+  project: { id, title, description, image, projectLink },
+}) => {
+  console.log(title, description, image, projectLink);
   return (
     <div className="project__container">
       <div className="project__thumbnail">
-        <img src="https://via.placeholder.com/1920x1080" alt="project" />
+        <img src={image} alt={title} />
       </div>
       <div className="project__info">
-        <h1 className="light__text">Project Title</h1>
-        <p className="light__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          nulla deserunt ipsam. Quia hic maxime natus debitis cumque et!
-          Dolorem, odio! Ab eaque voluptates minima quibusdam eveniet sed
-          cupiditate quos!
-        </p>
+        <h1 className="light__text">{title}</h1>
+        <p className="light__text">{description}</p>
       </div>
 
       <div className="arrow__btn">
-        <p className="light__text">Learn More</p>
-        <HiArrowNarrowRight />
+        <Link to={`projects/${id}`}>
+          <p className="light__text">Learn More</p>
+          <HiArrowNarrowRight />
+        </Link>
       </div>
     </div>
   );

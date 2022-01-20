@@ -4,7 +4,10 @@ import { GiAchievement } from "react-icons/gi";
 import Achievement from "../achievement/Achievement.jsx";
 const Achievements = () => {
   return (
-    <div className="achievements__container section__padding dark__bg">
+    <div
+      className="achievements__container section__padding dark__bg"
+      id="achievements"
+    >
       <div className="section__heading">
         <div className="achievements__heading_title">
           <GiAchievement />

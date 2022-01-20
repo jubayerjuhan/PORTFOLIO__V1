@@ -1,0 +1,47 @@
+.loading__container_true {
+  transition: height 0.5s linear;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: var(--dark-bg);
+  z-index: 9999;
+
+  .loading__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-25px) translateX(-25px);
+  }
+
+  .loading__text {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 3rem;
+      font-family: var(--font-family);
+      color: var(--color-red);
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: var(--font-family);
+      color: #fff;
+      letter-spacing: 8px;
+    }
+  }
+}
+
+.loading__container_false {
+  @extend .loading__container_true;
+  height: 0;
+
+  .loading__text {
+    transition: opacity 0.15s linear;
+    opacity: 0;
+  }
+}

@@ -1,23 +1,27 @@
 import React from "react";
+import projects from "../../contents/projects.js";
+
 import Project from "./../project/Project";
 import "./selectedWorks.css";
 
 const SelectedWorks = () => {
+  console.log(projects);
   return (
-    <div className="selected-works__container section__padding dark__bg">
+    <div
+      className="selected-works__container section__padding dark__bg"
+      id="projects"
+    >
       <div className="section__heading">
-        <h1 className="light__text">Selected Works</h1>
+        <h1 className="light__text">Projects</h1>
         <div className="gradient__bar"></div>
         <p className="light__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Here are some of the projects I've worked on.
         </p>
       </div>
       <div className="selected-works__container-content">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
       </div>
     </div>
   );

@@ -15,14 +15,13 @@ const Skills = () => {
     { name: "Sass", percent: "90", icon: <FaSass /> },
   ];
   return (
-    <div>
+    <div id="skills">
       <div className="skills__container section__padding dark__bg">
         <div className="section__heading">
           <h1 className="light__text">SKILLS</h1>
           <div className="gradient__bar"></div>
           <p className="light__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Here are some of the skills I've learned
           </p>
         </div>
         <div className="skills-detail__container">

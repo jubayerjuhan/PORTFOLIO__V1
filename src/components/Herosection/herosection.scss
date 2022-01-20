@@ -10,6 +10,22 @@
 .herosection__container {
   display: flex;
   align-items: center;
+  min-height: 100vh;
+
+  .description {
+    margin: 2rem 0;
+  }
+
+  .herosection__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact__btn {
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+  }
 }
 
 .herosection__container__texts {
@@ -36,6 +52,7 @@
   }
 
   button {
+    cursor: pointer;
     padding: 15px 30px;
     color: white;
     background: var(--color-red);
@@ -52,11 +69,11 @@
 
 .herosection__container__images {
   flex: 1;
-
   img {
     width: 100%;
     object-fit: contain;
     filter: grayscale(100%);
+    border-radius: 00px 0px 150px 150px;
   }
 }
 

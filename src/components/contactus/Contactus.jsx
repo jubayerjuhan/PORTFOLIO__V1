@@ -60,7 +60,10 @@ const Contactus = () => {
                   name="comment"
                 ></textarea>
               </div>
-              <div className="contactus__action__section__form__input_btn">
+              <div
+                className="contactus__action__section__form__input_btn"
+                id="contactCard"
+              >
                 <button>Submit</button>
               </div>
             </form>

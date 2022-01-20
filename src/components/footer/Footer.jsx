@@ -1,10 +1,23 @@
 import React from "react";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import footerdesign from "../../assets/footerdesign.svg";
 import "./footer.css";
 
 const Footer = () => {
+  const socialMedia = [
+    {
+      name: "Twitter",
+      link: "https://twitter.com/XUHANJJ",
+      icon: <BsTwitter />,
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/jubayerjuhan",
+      icon: <FaLinkedinIn />,
+    },
+  ];
   return (
     <div className="footer__container">
       <div className="footer__container__text light__text">
@@ -14,15 +27,11 @@ const Footer = () => {
         <p>+8801620692839</p>
       </div>
       <div className="footer__container__socialmedia">
-        <div className="socialmedia__container">
-          <BsFacebook />
-        </div>
-        <div className="socialmedia__container">
-          <BsTwitter />
-        </div>
-        <div className="socialmedia__container">
-          <FaLinkedinIn />
-        </div>
+        {socialMedia.map((social) => (
+          <a href={social.link} target="_blank">
+            <div className="socialmedia__container">{social.icon}</div>
+          </a>
+        ))}
       </div>
       <div className="footer__design">
         <img src={footerdesign} alt="" />

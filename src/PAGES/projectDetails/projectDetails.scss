@@ -1,0 +1,129 @@
+.projectDetails__section-wrapper {
+  display: flex;
+}
+
+.projectDetails__image-container {
+  height: 300px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+  }
+}
+
+.projectDetails__backIcon {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.055);
+  width: 50px;
+  height: 50px;
+  padding: 0.3rem;
+  border-radius: 80%;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+
+  // glass
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    color: var(--color-red);
+    font-size: 2rem;
+  }
+}
+
+.projectDetails__image {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: contain;
+}
+
+.projectDetails__info--wrapper {
+  font-family: var(--font-family);
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-gap: 3rem;
+  .projectDetails__info {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--color-red);
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      line-height: 2rem;
+    }
+  }
+  .project__details-project__summery {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.projectDetails__description {
+  margin: 2rem 0;
+  h3 {
+    color: var(--color-red);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.projectDetails__project-link {
+  h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  p {
+    text-decoration: underline;
+    color: var(--color-red);
+  }
+  a {
+    transition: color 0.3s linear;
+  }
+  a {
+    &:hover {
+      color: var(--color-red-hover);
+    }
+  }
+}
+
+//
+
+.projectDetails__technology {
+  h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .projectDetails__technology-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.pill__container {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-red);
+  width: fit-content;
+  border-radius: 20px;
+
+  p {
+    color: var(--color-red);
+  }
+}

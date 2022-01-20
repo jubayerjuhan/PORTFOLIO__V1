@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import Hamburger from "hamburger-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -10,6 +11,7 @@ const Navbar = () => {
   const mobileMenuClassName = open
     ? "mobile__container-open"
     : "mobile__container-close";
+  const opacityControl = open ? "opacity-1" : "opacity-0";
 
   if (open) {
     if (window.innerWidth > 1050) {
@@ -27,23 +29,23 @@ const Navbar = () => {
     });
   }, []);
 
+  const navLinks = [
+    { address: "/#home", name: "Home" },
+    { address: "/#skills", name: "Skills" },
+    { address: "/#projects", name: "Projects" },
+    { address: "/#achievements", name: "Home" },
+    { address: "/#contactCard", name: "Contact" },
+  ];
+
   const Menu = () => (
     <>
-      <p className="light__text">
-        <a href="#home">Home</a>
-      </p>
-      <p className="light__text">
-        <a href="#about">About</a>
-      </p>
-      <p className="light__text">
-        <a href="#portfolio">Portfolio</a>
-      </p>
-      <p className="light__text">
-        <a href="#services">Services</a>
-      </p>
-      <p className="light__text">
-        <a href="#contact">Home</a>
-      </p>
+      {navLinks.map((link) => (
+        <p className={`light__text ${opacityControl}`}>
+          <a href={link.address} onClick={() => setOpen(false)}>
+            {link.name}
+          </a>
+        </p>
+      ))}
     </>
   );
 

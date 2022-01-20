@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./../../components/Navbar/Navbar";
 import Herosection from "./../../components/Herosection/Herosection";
 import Services from "../../components/services/Services.jsx";
@@ -9,17 +9,23 @@ import Banner from "./../../components/banner/Banner";
 import Contactus from "./../../components/contactus/Contactus";
 import Map from "./../../components/map/Map";
 import Footer from "./../../components/footer/Footer";
+import Loading from "../../components/LoadingScreen/Loading.jsx";
 
 const Homepage = () => {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 1500);
   return (
     <div className="homepage">
+      <Loading loading={loading} />
       <Navbar />
       <Herosection />
-      <Services />
+      {/* <Services /> */}
       <Skills />
       <SelectedWorks />
       <Achievements />
-      <Banner />
+      {/* <Banner /> */}
       <Contactus />
       <Map />
       <Footer />
