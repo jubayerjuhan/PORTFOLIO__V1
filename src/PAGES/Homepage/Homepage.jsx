@@ -10,6 +10,7 @@ import Contactus from "./../../components/contactus/Contactus";
 import Map from "./../../components/map/Map";
 import Footer from "./../../components/footer/Footer";
 import Loading from "../../components/LoadingScreen/Loading.jsx";
+import { Helmet } from "react-helmet";
 
 const Homepage = () => {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,9 @@ const Homepage = () => {
   }, 1500);
   return (
     <div className="homepage">
+      <Helmet>
+        <title>Jubayer Juhan</title>
+      </Helmet>
       <Loading loading={loading} />
       <Navbar />
       <Herosection />

@@ -4,6 +4,7 @@ import projects from "../../contents/projects.js";
 import { IoChevronBack } from "react-icons/io5";
 
 import "../projectDetails/projectDetails.css";
+import { Helmet } from "react-helmet";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -16,6 +17,9 @@ const ProjectDetails = () => {
   console.log(project);
   return (
     <>
+      <Helmet>
+        <title>{`Project - ${project?.title}`}</title>
+      </Helmet>
       <div
         className="projectDetails__image-container"
         style={{ backgroundImage: `url('${project.image}')` }}

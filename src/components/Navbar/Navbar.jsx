@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import Hamburger from "hamburger-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
