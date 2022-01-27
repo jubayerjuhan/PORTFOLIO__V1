@@ -23,6 +23,7 @@
   font-weight: 500;
   font-size: 26px;
   line-height: 44px;
+  color: var(--color-red);
 }
 
 .project__info p {

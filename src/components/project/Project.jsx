@@ -15,7 +15,7 @@ const Project = ({
           <img src={image} alt={title} />
         </div>
         <div className="project__info">
-          <h1 className="light__text">{title}</h1>
+          <h1 className="project__title">{title}</h1>
           <p className="light__text">{description}</p>
         </div>
 
