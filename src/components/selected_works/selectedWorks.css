@@ -1,9 +1,7 @@
 .selected-works__container-content {
   margin: 4rem 0 2rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem 4rem;
 }
 
@@ -14,5 +12,4 @@
   .project__container {
     margin: 5rem 0;
   }
-}
-/*# sourceMappingURL=selectedWorks.css.map */
+}/*# sourceMappingURL=selectedWorks.css.map */

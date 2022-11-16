@@ -1,12 +1,9 @@
 .service__container-content {
   margin: 2rem 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
-
 .service__container-content::-webkit-scrollbar {
   display: none;
 }
@@ -18,5 +15,4 @@
   .service__container-content .services__service-container {
     margin: 2rem 0;
   }
-}
-/*# sourceMappingURL=services.css.map */
+}/*# sourceMappingURL=services.css.map */

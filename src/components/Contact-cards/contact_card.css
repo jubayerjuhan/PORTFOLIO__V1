@@ -1,42 +1,25 @@
 .contact-card__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #343434;
   border-radius: 10px;
   padding: 1rem;
   width: 30%;
 }
-
 .contact-card__container .contact-card__container-icon {
   width: 50px;
   height: 50px;
   background-color: var(--color-red);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 1rem 0;
   border-radius: 50%;
   color: white;
   font-size: 1.5rem;
 }
-
 .contact-card__container p {
   font-family: var(--font-family);
   font-weight: normal;
@@ -50,5 +33,4 @@
     width: 100%;
     margin: 1rem 0rem;
   }
-}
-/*# sourceMappingURL=contact_card.css.map */
+}/*# sourceMappingURL=contact_card.css.map */

@@ -28,9 +28,27 @@ const Achievement = () => {
             surface of Mars with a real lunar module and explore the environment
             with some pretty exciting MARS locations.
           </p>
-          <div className="arrow__btn">
-            <p className="light__text">Learn More</p>
-            <HiArrowNarrowRight />
+          <div style={{ display: "flex", gap: "30px" }}>
+            <div className="arrow__btn">
+              <a
+                href="https://drive.google.com/file/d/1C5CBHqUAz3H26SX9TnFMf8Sy-bo1jLCH/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="light__text">Show Certificate</p>
+              </a>
+              <HiArrowNarrowRight />
+            </div>
+            <div className="arrow__btn">
+              <a
+                href="https://2021.spaceappschallenge.org/challenges/statements/planetary-lander-video-game/teams/celestial-six/project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="light__text">Learn More</p>
+              </a>
+              <HiArrowNarrowRight />
+            </div>
           </div>
         </div>
       </div>
