@@ -7,13 +7,8 @@
 
 .contactus__container__main {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .contactus__action__section {
@@ -21,30 +16,21 @@
 }
 
 .contactus__action__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .contactus__action__section__form {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
 }
-
 .contactus__action__section__form .contactus__action__2x_grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem 4rem;
 }
-
 .contactus__action__section__form .contactus__action__section__form__input,
 .contactus__action__section__form .contactus__action__section__form__input_last {
   font-family: var(--font-family);
 }
-
 .contactus__action__section__form .contactus__action__section__form__input p,
 .contactus__action__section__form .contactus__action__section__form__input_last p {
   margin: 0 0 0.5rem;
@@ -52,7 +38,6 @@
   font-size: 12px;
   line-height: 15px;
 }
-
 .contactus__action__section__form .contactus__action__section__form__input input,
 .contactus__action__section__form .contactus__action__section__form__input_last input {
   width: 100%;
@@ -64,12 +49,10 @@
   color: #fff;
   font-family: var(--font-family);
 }
-
 .contactus__action__section__form .contactus__action__section__form__input_last {
   margin: 2rem 0;
   width: 100%;
 }
-
 .contactus__action__section__form .contactus__action__section__form__input_last textarea {
   font-family: var(--font-family);
   padding: 10px;
@@ -79,7 +62,6 @@
   outline: none;
   background-color: #343434;
 }
-
 .contactus__action__section__form .contactus__action__section__form__input_btn button {
   font-family: var(--font-family);
   padding: 18px 35px;
@@ -95,25 +77,16 @@
 }
 
 .contactus__card__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 8rem 0 2rem;
 }
 
 @media screen and (max-width: 1050px) {
   .contactus__action__section {
     margin: 2rem 0rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contactus__action__section .section__heading {
     margin: 2rem 0;
@@ -129,11 +102,7 @@
     font-size: 12px;
   }
   .contactus__card__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 5rem 0 2rem;
   }
-}
-/*# sourceMappingURL=contactus.css.map */
+}/*# sourceMappingURL=contactus.css.map */

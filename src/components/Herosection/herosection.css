@@ -1,7 +1,6 @@
 .utils {
   position: relative;
 }
-
 .utils img {
   position: absolute;
   left: 0;
@@ -9,26 +8,17 @@
 }
 
 .herosection__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   min-height: 100vh;
 }
-
 .herosection__container .description {
   margin: 2rem 0;
 }
-
 .herosection__container .herosection__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
-
 .herosection__container .contact__btn {
   background-color: transparent;
   border: 1px solid var(--color-red);
@@ -36,24 +26,19 @@
 }
 
 .herosection__container__texts {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   padding-right: 5rem;
   z-index: 1;
 }
-
 .herosection__container__texts p {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
 }
-
 .herosection__container__texts p:first-child {
   color: var(--color-red);
 }
-
 .herosection__container__texts h1 {
   margin: 1rem 0;
   font-family: var(--font-family);
@@ -62,7 +47,6 @@
   line-height: 60px;
   color: #ffffff;
 }
-
 .herosection__container__texts button {
   cursor: pointer;
   padding: 15px 30px;
@@ -78,18 +62,14 @@
 }
 
 .herosection__container__images {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .herosection__container__images img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  border-radius: 00px 0px 150px 150px;
+  filter: grayscale(100%);
+  border-radius: 0px 0px 150px 150px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -97,10 +77,7 @@
     display: none;
   }
   .herosection__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .herosection__container__texts {
     padding-right: 0;
@@ -118,7 +95,6 @@
     padding-bottom: 5rem;
   }
 }
-
 @media screen and (max-width: 700px) {
   .herosection__container {
     padding-top: 100px;
@@ -130,5 +106,4 @@
   .herosection__container__images {
     padding-bottom: 2rem;
   }
-}
-/*# sourceMappingURL=herosection.css.map */
+}/*# sourceMappingURL=herosection.css.map */

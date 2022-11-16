@@ -8,8 +8,7 @@
 .skill-fill {
   height: 20px;
   background-color: var(--color-red);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   border-radius: 5px;
 }
 
@@ -21,20 +20,12 @@
 }
 
 .skill-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 .skill-heading svg {
   color: var(--color-red);
   margin-right: 1rem;
   font-size: 2rem;
-}
-/*# sourceMappingURL=skill.css.map */
+}/*# sourceMappingURL=skill.css.map */

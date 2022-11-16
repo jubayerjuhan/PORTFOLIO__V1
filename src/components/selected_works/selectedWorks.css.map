@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kCAAkC,CAAC;EACjC,MAAM,EAAE,WAAW;EACnB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,QAAQ,EAAE,SAAS;CACpB;;AAED,MAAM,EAAE,SAAS,EAAE,MAAM;EACvB,AAAA,kCAAkC,CAAC;IACjC,OAAO,EAAE,KAAK;GACf;EACD,AAAA,mBAAmB,CAAC;IAClB,MAAM,EAAE,MAAM;GACf",
-    "sources": [
-        "selectedWorks.scss"
-    ],
-    "names": [],
-    "file": "selectedWorks.css"
-}
+{"version":3,"sources":["selectedWorks.scss","selectedWorks.css"],"names":[],"mappings":"AAAA;EACE,mBAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;ACCF;;ADEA;EACE;IACE,cAAA;ECCF;EDCA;IACE,cAAA;ECCF;AACF","file":"selectedWorks.css"}

@@ -29,7 +29,7 @@ const Homepage = () => {
       <Skills />
       <SelectedWorks />
       <Achievements />
-      {/* <Banner /> */}
+      <Banner />
       <Contactus />
       <Map />
       <Footer />
