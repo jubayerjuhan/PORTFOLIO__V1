@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,6 @@ import "./project.css";
 const Project = ({
   project: { id, title, description, image, projectLink },
 }) => {
-  console.log(title, description, image, projectLink);
   return (
     <>
       <div className="project__container">
@@ -19,12 +18,12 @@ const Project = ({
           <p className="light__text">{description}</p>
         </div>
 
-        <div className="arrow__btn">
-          <Link to={`projects/${id}`}>
+        <Link to={`projects/${id}`} style={{ width: "fit-content" }}>
+          <div className="arrow__btn">
             <p className="light__text">Learn More</p>
             <HiArrowNarrowRight />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </>
   );

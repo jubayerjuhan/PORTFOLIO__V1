@@ -8,10 +8,8 @@ const Banner = () => {
       style={{ paddingTop: "0rem", paddingBottom: "0rem" }}
     >
       <div className="banner__container">
-        <h1 className="light__text">
-          Discover How Design Can Help Your Business
-        </h1>
-        <button className="button">Contact Us</button>
+        <h1 className="light__text">Need A App or Website Developer?</h1>
+        <button className="button">Contact Me</button>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import wave from "../../assets/wave.svg";
 
 const Herosection = () => {
   const handleClick = () => {
-    setTimeout(() => {
-      alert("Please Check The Download Section!");
-    }, 500);
+    // setTimeout(() => {
+    //   alert("Please Check The Download Section!");
+    // }, 500);
   };
   return (
     <>
@@ -26,11 +26,14 @@ const Herosection = () => {
             every day.
           </p>
           <div className="herosection__buttons">
-            <button className="resume__btn" onClick={handleClick}>
-              <a href="https://raw.githubusercontent.com/jubayerjuhan/Resume/b0738e5d753617ba4600aa7c6898e893cbd2ad7d/JubayerJuhanResume_4.pdf">
+            <a
+              href="https://drive.google.com/file/d/1h6Kwje_kmMJeeYBOI4gSnuOo95UkI5-q/view?usp=sharing"
+              target={"_blank"}
+            >
+              <button className="resume__btn" onClick={handleClick}>
                 My Resume
-              </a>
-            </button>
+              </button>
+            </a>
             <button className="contact__btn">
               <a href="#contactCard"> Contact Me</a>
             </button>

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,4BAA4B,CAAC;EAC3B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CAKpB;;AAPD,AAGE,4BAH0B,CAG1B,GAAG,CAAC;EACF,KAAK,EAAE,gBAAgB;EACvB,SAAS,EAAE,IAAI;CAChB",
-    "sources": [
-        "achievements.scss"
-    ],
-    "names": [],
-    "file": "achievements.css"
-}
+{"version":3,"sources":["achievements.scss","achievements.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;ACCF;ADAE;EACE,uBAAA;EACA,eAAA;ACEJ","file":"achievements.css"}

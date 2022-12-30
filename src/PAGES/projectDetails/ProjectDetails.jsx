@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import projects from "../../contents/projects.js";
 import { IoChevronBack } from "react-icons/io5";
@@ -14,6 +14,15 @@ const ProjectDetails = () => {
   const handleBack = () => {
     navigate("/");
   };
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   console.log(project);
   return (
     <>
@@ -35,19 +44,38 @@ const ProjectDetails = () => {
             {project.description}
           </p>
           <div className="projectDetails__description light__text">
-            <h3>Description</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, dignissimos! Id ullam distinctio eius at voluptate
-              culpa, voluptatem laudantium fugit adipisci voluptates ex nam
-              delectus quos odio assumenda, voluptatibus iure?
-            </p>
+            <h3>Features</h3>
+            <div className="feature__list-wrapper">
+              <ul className="features__list">
+                {project.features?.map((feature, key) => (
+                  <li className="light__text project__details-project__summery">
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="projectDetails__project-link">
             <h3>Project Links</h3>
             <a href={project.projectLink} target="_blank">
               <p>🔗Live Project Link</p>
             </a>
+          </div>
+          {project.companyLink && (
+            <div className="projectDetails__project-link">
+              <h3>Company Link</h3>
+              <a href={project.companyLink} target="_blank">
+                <p>🔗Live Company Link</p>
+              </a>
+            </div>
+          )}
+          <div className="projectDetails__project-link">
+            <h3>Github Project Links</h3>
+            {project.githubLink.map((link, key) => (
+              <a href={link.link} target="_blank" key={key}>
+                <p>🔗{link.name} Link</p>
+              </a>
+            ))}
           </div>
         </div>
         <div className="projectDetails__left">
