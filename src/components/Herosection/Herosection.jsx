@@ -19,7 +19,7 @@ const Herosection = () => {
       >
         <div className="herosection__container__texts">
           <p>Hi, I’m Jubayer Juhan</p>
-          <h1 className="gradient__text">Front End and Mobile App Developer</h1>
+          <h1 className="gradient__text">Full Stack Web and App Developer</h1>
           <p className="light__text description">
             I’m a Full Stack Web Developer and Mobile App Developer. A
             self-taught developer with a passion for learning new technologies
