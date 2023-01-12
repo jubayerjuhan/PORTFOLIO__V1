@@ -1,4 +1,5 @@
 import myinstructorImage from "../assets/myinstructor.png";
+import khojImage from "../assets/khojhome.png";
 
 const projects = [
   {
@@ -108,6 +109,35 @@ const projects = [
       "Users will be presented with show details and a youtube trailer of that exact show when they will click on the show's thumbnail",
       "Users Can See Trailer of That Spacific Movies and Series, Used Reverse Engineering to Get Videos From Youtube",
       "Users Will Be Able To Add Movies and Series To Their Fav. List",
+    ],
+  },
+  {
+    id: 4,
+    title: "Khoj - A Platform To Find Lost Things",
+    description:
+      "It's a mobile app platform where users are able to make listing of their lost and found things and people. There is a special face recognition technology where people can search with a image and see if there any listing available of found people with that face",
+    image: khojImage,
+    projectLink: "https://tinyurl.com/khojapp2021",
+    technologies: [
+      "React Native",
+      "Redux",
+      "Express.js",
+      "MongoDB",
+      "Node.js",
+      "Flask",
+    ],
+    githubLink: [
+      { name: "App", link: "https://github.com/jubayerjuhan/Khoj-App" },
+      {
+        name: "Server",
+        link: "https://github.com/jubayerjuhan/Khoj-Server-Node",
+      },
+    ],
+    features: [
+      "A user can create account and login to their account with email",
+      "Users can list any found or lost people",
+      "Users can list any found or lost document like passport, national Id, admit card etc.",
+      "Added face recognation technology to lost or found people with their face / photo",
     ],
   },
 ];
