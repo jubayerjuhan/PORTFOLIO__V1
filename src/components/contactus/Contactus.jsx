@@ -24,8 +24,7 @@ const Contactus = () => {
             <h1 className="light__text">Get In Touch</h1>
             <div className="gradient__bar" style={{ marginLeft: "0" }}></div>
             <p style={{ textAlign: "left" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              fuga eligendi accusantium.
+              Contact With Me To Get Your Work Done
             </p>
           </div>
           <div className="contactus__action__section__form">
